@@ -294,24 +294,7 @@ ggplot(Plot, aes(Ecc, RT_))+
 
       
       
-      
-      
-      
-      
 
-
-
-mod6 <- (lmer(RT ~ Condition + (gaze_dist_ball) + Ecc +
-                (1|subID) + (1|subID:Condition) + (1|subID:Ecc), data = D1))
-anova_stats(mod6)
-eta_sq(mod6)
-
-
-
-
-P_value <- c(.061, .009, .636, .824, .211, .0002, .426, .348, .074, .044)
-
-p.adjust (P_value, method="holm")
 
 
 
